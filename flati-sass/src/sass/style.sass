@@ -1,0 +1,203 @@
+@import ./_fonts
+@import ./_variables
+
+$fa-font-path : "../../node_modules/@fortawesome/fontawesome-free/webfonts"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss"
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss"
+
+
+// Ton CSS
+body
+    margin: 0
+    font-family: "rubik"
+    text-align: center
+// HEADER
+header 
+    nav 
+        display: flex
+        align-items: center
+        background-color: $bg-font
+        .logo
+            flex: 1
+            a 
+                font-size: 40px
+                color: white
+                text-decoration: none
+                text-transform: uppercase
+        ul 
+            flex: 2
+            display: flex
+            list-style-type: none
+            margin-right: 10%
+            margin-left: 10%
+            margin-bottom: 0
+            @media screen and ( max-width : 620px )
+                display: none
+            @media screen and ( min-width : 620px ) and (max-width : 1024px)
+                display: none
+            li 
+                margin: 0 10px
+                padding: 20px
+                border-top-left-radius: 5px
+                border-top-right-radius: 5px
+                transition: 0.3s
+                &:hover
+                    background-color: $bleu-central
+                    cursor: pointer
+                    a 
+                        color: white
+                a 
+                    font-size: 15px
+                    color: gray 
+                    text-decoration: none
+                    text-transform: uppercase
+    img 
+        width: 100%
+        display: flex
+// Section citation
+.citation
+    background-color: #e8e6e0
+    padding: 20px 15%
+    @media screen and ( max-width : 620px )
+    padding: 20px 5%
+
+    h2 
+        margin: 0
+        padding: 30px 0 0 30px
+        color: gray 
+        font-weight: lighter
+        span
+            &:first-of-type
+                background-color: $bleu-central
+                color: white
+            &:nth-of-type(2)
+                color: $bleu-central
+            &:last-child
+                font-weight: bold
+// Section service 
+.service 
+    margin: 50px 15%
+    @media screen and ( min-width : 620px ) and (max-width : 1024px)
+        margin: 50px 10%
+    .row-card
+        display: flex
+        @media screen and ( max-width : 620px )
+            flex-wrap: wrap
+        @media screen and ( min-width : 620px ) and (max-width : 1024px)
+            flex-wrap: wrap
+            justify-content: center
+        .card
+            width: 25%
+            background-color: lightgrey
+            padding: 10px
+            margin: 0 10px
+            border-radius: 5px
+            @media screen and ( max-width : 620px )
+                width: 100%
+                margin-top: 5px
+            @media screen and ( min-width : 620px ) and (max-width : 1024px)
+                width: 40%
+                margin-top: 5px
+            i 
+                color: $bleu-central
+                padding: 15px
+                border-radius: 50%
+                font-size: 30px
+                background-color: white
+            h4 
+                text-transform: uppercase
+                margin-bottom: 0
+            span
+                color: $bleu-central
+            p 
+                padding-bottom: 25px
+    .row-service
+        display: flex
+        margin-top: 5%
+        @media screen and ( max-width : 620px )
+            flex-wrap: wrap
+        @media screen and ( min-width : 620px ) and (max-width : 1024px)
+            flex-wrap: wrap
+
+        .recent
+            width: 40%
+            text-align: start
+            margin-right: 10%
+            @media screen and ( max-width : 620px )
+                width: 100%
+                text-align: center
+                margin: 0
+            @media screen and ( min-width : 620px ) and (max-width : 1024px)
+                width: 100%
+                text-align: center
+                margin: 0
+            p 
+                &:first-of-type
+                    color: gray
+            button 
+                background-color: $bleu-central
+                color: white
+                border: 0
+                border-radius: 5%
+                padding: 15px
+        .service
+            width: 60%
+            margin: 0
+            display: flex
+            @media screen and ( max-width : 620px )
+                width: 100%
+                margin-top: 15px
+                flex-wrap: wrap
+            @media screen and ( min-width : 620px ) and (max-width : 1024px)
+                width: 100%
+                margin-top: 15px
+                flex-wrap: wrap
+                justify-content: center
+            .card-service
+                width: 33%
+                background-color: #38485f
+                margin: 3px
+                border-radius: 5px
+                color: white
+                @media screen and ( max-width : 620px )
+                    width: 100%
+                @media screen and ( min-width : 620px ) and (max-width : 1024px)
+                    width: 40%
+                p 
+                    margin-bottom: 0
+                    color: lightgray
+                img 
+                    width: 100%
+// footer
+footer
+    .row-reseaux
+        padding: 30px 30%
+        background-color: #3676bb
+        color: white
+        @media screen and ( max-width : 620px )
+            padding: 30px 5%
+        h3
+            text-transform: uppercase
+            letter-spacing: 10px
+        h3, p
+            opacity: 0.8
+        ul 
+            display: flex
+            list-style: none
+            justify-content: center
+            margin-top: 50px
+            li 
+                margin: 0 15px
+                a 
+                    color: white
+                    opacity: 0.2
+                    i 
+                        font-size: 40px
+    .copy   
+        padding: 20px
+        background-color: $bg-font
+        color: gray
+        margin: 0
+
